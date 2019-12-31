@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" > 
+<mapper namespace="com.ebpm.dao.ProductDao" >
+<cache/>
+		<select id="selectProductByName" resultType="java.util.Map" parameterType="String" >
+			SELECT * FROM product 
+			<if test="_parameter!=null and _parameter !=''">
+				WHERE name = #{_parameter}
+			</if>
+		  </select>
+		  
+		  <select id="loadAll" resultType="java.util.Map"  >
+			SELECT * FROM user3 
+		  </select>
+		  
+		  <insert id="add"  parameterType="String"  >
+		  
+				INSERT INTO user1( name, city) VALUES ( 'ddd', #{_parameter});
+		  </insert>
+		  
+		   <insert id="addOne"  parameterType="User3"  useGeneratedKeys="true" keyProperty="id" >
+				INSERT INTO user3( name, age) VALUES ( #{name},#{age} );
+		  </insert>
+		  
+		 <insert id="addList"  parameterType="java.util.Map"  useGeneratedKeys="true" keyProperty="id">
+		 INSERT INTO user3( name, age) VALUES 
+			   <foreach collection="list" item="item" index="index" separator=",">
+    				( #{item.name}, #{item.age})
+			  </foreach>
+		  </insert>
+		  
+		  
+  </mapper>
+  

@@ -10,6 +10,6 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 public class RedisSessionConfig {  
 	@Bean
 	public static ConfigureRedisAction configureRedisAction() {
-		return ConfigureRedisAction.NO_OP;
+		return ConfigureRedisAction.NO_OP; 
 	}
 }  

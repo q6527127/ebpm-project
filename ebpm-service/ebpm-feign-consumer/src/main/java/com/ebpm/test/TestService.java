@@ -18,6 +18,9 @@ public interface TestService {
 	@RequestMapping("/ebpm/session/get")
 	public String get();
 	
+	@RequestMapping("/ebpm/session/set")
+	public String set();
+	
 	@RequestMapping("/ebpm/mysql/loadAllDb0")
 	public String loadAllDb0();
 	

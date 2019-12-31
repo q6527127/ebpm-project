@@ -24,7 +24,7 @@ public class FeignApp {
 	}
 	
 	@Bean
-	public FeignHystrixConcurrencyStrategy feignHystrixConcurrencyStrategy() {
+	  public FeignHystrixConcurrencyStrategy feignHystrixConcurrencyStrategy() {
 	    return new FeignHystrixConcurrencyStrategy();
 	}
 }
