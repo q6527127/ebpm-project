@@ -1,4 +1,4 @@
-package com.ebpm.controller;
+package com.ebpm.test;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,12 +32,5 @@ public class SessionSharedTestController {
         map.put("sessionId", request.getSession().getId());  
         map.put("message", request.getSession().getAttribute("request Url"));  
         return map;  
-    }  
-    
-    @RequestMapping(value = "/initializeSession", method = RequestMethod.GET)  
-    public String initializeSession (HttpServletRequest request){  
-    	System.out.println("companyCode:"+request.getHeader("companyCode"));
-    	System.out.println("userId:"+request.getHeader("userId"));
-    	return request.getSession().getId();
     }  
 }  
