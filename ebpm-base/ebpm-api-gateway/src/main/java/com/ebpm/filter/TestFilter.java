@@ -14,6 +14,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.ebpm.util.HttpClientTool;
@@ -27,6 +28,7 @@ import com.netflix.zuul.context.RequestContext;
  * @author xiaodi
  *
  */
+@Component
 public class TestFilter extends ZuulFilter{
 	
 	@Autowired

@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -16,6 +17,7 @@ import com.netflix.zuul.context.RequestContext;
  * @author xiaodi
  *
  */
+@Component
 public class TokenFilter extends ZuulFilter{
 
 	private final Logger logger  = Logger.getLogger(getClass());

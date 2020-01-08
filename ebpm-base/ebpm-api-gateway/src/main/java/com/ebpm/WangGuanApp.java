@@ -25,10 +25,10 @@ public class WangGuanApp
     }
     
     //启动类加载测试过滤器
-    @Bean
-    public TestFilter testFilter(){
-    	return new TestFilter();
-    }
+//    @Bean
+//    public TestFilter testFilter(){
+//    	return new TestFilter();
+//    }
     
 //    //启动类加载TOKEN过滤器
 //    @Bean

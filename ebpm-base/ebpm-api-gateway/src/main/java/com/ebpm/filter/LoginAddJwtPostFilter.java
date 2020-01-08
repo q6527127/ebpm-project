@@ -10,6 +10,7 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
@@ -35,6 +36,9 @@ public class LoginAddJwtPostFilter extends ZuulFilter {
     @Autowired
     DataFilterConfig dataFilterConfig;
 
+	private final Logger log  = Logger.getLogger(getClass());
+
+    
     /**
      * pre：路由之前
      * routing：路由之时
@@ -67,7 +71,6 @@ public class LoginAddJwtPostFilter extends ZuulFilter {
     public boolean shouldFilter() {
         RequestContext ctx = RequestContext.getCurrentContext();
         String uri = ctx.getRequest().getRequestURI();
-        System.out.println(uri);
         //登陆成功后进入过滤器，生成token
         if (StringUtils.indexOf(uri, "login")!=-1) {
         	return true;

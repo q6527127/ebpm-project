@@ -13,6 +13,7 @@ import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
@@ -25,6 +26,8 @@ import java.util.Map;
 @Component
 public class JwtAuthPreFilter extends ZuulFilter {
 	
+	private final Logger log  = Logger.getLogger(getClass());
+
 	
     @Autowired
     ObjectMapper objectMapper;
@@ -68,7 +71,6 @@ public class JwtAuthPreFilter extends ZuulFilter {
     	
     	 RequestContext ctx = RequestContext.getCurrentContext();
          String uri = ctx.getRequest().getRequestURI();
-         System.out.println(uri);
          //如果非登陆请求，需要进入过滤器校验token
          if (StringUtils.indexOf(uri, "login")==-1) {
          	return true;
@@ -100,7 +102,7 @@ public class JwtAuthPreFilter extends ZuulFilter {
         try {
             //解析没有异常则表示token验证通过，如有必要可根据自身需求增加验证逻辑
             claims = jwtUtil.parseJWT(token);
-            //log.info("token : {} 验证通过", token);
+            log.info("token : {} 验证通过:"+ token);
             //对请求进行路由
             ctx.setSendZuulResponse(true);
             //请求头加入userId，传给业务服务
@@ -108,18 +110,17 @@ public class JwtAuthPreFilter extends ZuulFilter {
             ctx.addZuulRequestHeader("companyCode", claims.get("companyCode").toString());
         } catch (ExpiredJwtException expiredJwtEx) {
         	expiredJwtEx.printStackTrace();
-            //log.error("token : {} 过期", token);
+            log.error("token : {} 过期:"+ token);
             //不对请求进行路由
             ctx.setSendZuulResponse(false);
             responseError(ctx, -402, "token expired");
         } catch (Exception ex) {
         	ex.printStackTrace();
-            //log.error("token : {} 验证失败", token);
+            log.error("token : {} 验证失败:"+ token);
             //不对请求进行路由
             ctx.setSendZuulResponse(false);
             responseError(ctx, -401, "invalid token");
         }
-
         return null;
     }
 
@@ -142,7 +143,7 @@ public class JwtAuthPreFilter extends ZuulFilter {
             return objectMapper.writeValueAsString(o);
         } catch (JsonProcessingException e) {
         	e.printStackTrace();
-           // log.error("json序列化失败", e);
+            log.error("json序列化失败", e);
             return null;
         }
     }
