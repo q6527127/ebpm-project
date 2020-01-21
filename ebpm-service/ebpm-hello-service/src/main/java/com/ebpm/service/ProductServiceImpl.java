@@ -72,4 +72,9 @@ public class ProductServiceImpl implements ProductService {
 		// TODO Auto-generated method stub
 		return mapper.loadAll();
 	}
+
+	@Override
+	public List<Map<Object, Object>> loadAllToDbPage(String targetSource, Integer page, Integer limit) {
+		return mapper.loadAll();
+	}
 }

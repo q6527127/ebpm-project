@@ -19,5 +19,6 @@ public interface ProductService {
     int addList2(List<HashMap<String,Object>>list) throws Exception;
     public List<Map<Object, Object>> loadAll();
     public List<Map<Object, Object>> loadAllToDb(String targetSource);
+    public List<Map<Object, Object>> loadAllToDbPage(String targetSource, Integer page, Integer limit);
 
 }

@@ -68,23 +68,25 @@ public class JwtAuthPreFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
+    	return true;
     	
-    	 RequestContext ctx = RequestContext.getCurrentContext();
-         String uri = ctx.getRequest().getRequestURI();
-         //如果非登陆请求，需要进入过滤器校验token
-         if (StringUtils.indexOf(uri, "login")==-1) {
-         	return true;
- 	    }
-         
-         
-        //路径与配置的相匹配，则执行过滤
-//        RequestContext ctx = RequestContext.getCurrentContext();
-//        for (String pathPattern : dataFilterConfig.getAuthPath()) {
-//            if (PathUtil.isPathMatch(pathPattern, ctx.getRequest().getRequestURI())) {
-//                return true;
-//            }
-//        }
-        return false;
+    	
+//    	 RequestContext ctx = RequestContext.getCurrentContext();
+//         String uri = ctx.getRequest().getRequestURI();
+//         //如果非登陆请求，需要进入过滤器校验token
+//         if (StringUtils.indexOf(uri, "login")==-1) {
+//         	return true;
+// 	    }
+//         
+//         
+//        //路径与配置的相匹配，则执行过滤
+////        RequestContext ctx = RequestContext.getCurrentContext();
+////        for (String pathPattern : dataFilterConfig.getAuthPath()) {
+////            if (PathUtil.isPathMatch(pathPattern, ctx.getRequest().getRequestURI())) {
+////                return true;
+////            }
+////        }
+//        return false;
     }
 
 

@@ -69,19 +69,23 @@ public class LoginAddJwtPostFilter extends ZuulFilter {
      */
     @Override
     public boolean shouldFilter() {
-        RequestContext ctx = RequestContext.getCurrentContext();
-        String uri = ctx.getRequest().getRequestURI();
-        //登陆成功后进入过滤器，生成token
-        if (StringUtils.indexOf(uri, "login")!=-1) {
-        	return true;
-	    }
-        //路径与配置的相匹配，则执行过滤
-//        for (String pathPattern : dataFilterConfig.getUserLoginPath()) {
-//            if (PathUtil.isPathMatch(pathPattern, ctx.getRequest().getRequestURI())) {
-//                return true;
-//            }
-//        }
-        return false;
+    	return true;
+    	
+    	
+    	
+//        RequestContext ctx = RequestContext.getCurrentContext();
+//        String uri = ctx.getRequest().getRequestURI();
+//        //登陆成功后进入过滤器，生成token
+//        if (StringUtils.indexOf(uri, "login")!=-1) {
+//        	return true;
+//	    }
+//        //路径与配置的相匹配，则执行过滤
+////        for (String pathPattern : dataFilterConfig.getUserLoginPath()) {
+////            if (PathUtil.isPathMatch(pathPattern, ctx.getRequest().getRequestURI())) {
+////                return true;
+////            }
+////        }
+//        return false;
     	
     }
 
