@@ -4,7 +4,9 @@ com/ebpm/common/Result.class
 com/ebpm/filter/TokenFilter.class
 com/ebpm/config/RedisSessionConfig.class
 com/ebpm/filter/LoginAddJwtPostFilter.class
+com/ebpm/WangGuanApp.class
 com/ebpm/util/PathUtil.class
 com/ebpm/filter/LoginAddJwtPostFilter$2.class
+com/ebpm/filter/TestFilter.class
 com/ebpm/filter/LoginAddJwtPostFilter$1.class
 com/ebpm/filter/JwtAuthPreFilter.class

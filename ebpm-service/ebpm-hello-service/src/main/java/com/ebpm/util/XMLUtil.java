@@ -27,6 +27,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.ebpm.common.util.DateUtil;
+
 public class XMLUtil {
 	/**
 	 * 将XML文件输出到指定的路径
