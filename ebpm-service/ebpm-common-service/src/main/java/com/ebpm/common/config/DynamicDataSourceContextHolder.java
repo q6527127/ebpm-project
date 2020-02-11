@@ -1,4 +1,4 @@
-package com.ebpm.config;
+package com.ebpm.common.config;
 
 public class DynamicDataSourceContextHolder {
 

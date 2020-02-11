@@ -1,4 +1,4 @@
-package com.ebpm.config;
+package com.ebpm.common.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.CacheManager;

@@ -1,4 +1,4 @@
-package com.ebpm.config;
+package com.ebpm.common.config;
 
 import java.util.HashMap;
 import java.util.Map;

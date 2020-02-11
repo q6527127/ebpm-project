@@ -1,4 +1,4 @@
-package com.ebpm.config;
+package com.ebpm.common.config;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

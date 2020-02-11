@@ -1,4 +1,4 @@
-package com.ebpm.config;
+package com.ebpm.common.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,8 +7,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix="datasource.db0")
-public class Db0Properties {
+@ConfigurationProperties(prefix="datasource.db1")
+public class Db1Properties {
 
 	private String driverClassName;
 	
