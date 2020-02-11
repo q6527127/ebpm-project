@@ -4,9 +4,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ebpm.bean.LoginByPasswordIVO;
-import com.ebpm.bean.LoginByPasswordOVO;
-import com.ebpm.bean.Result;
+import com.ebpm.common.bean.LoginByPasswordIVO;
+import com.ebpm.common.bean.LoginByPasswordOVO;
+import com.ebpm.common.bean.Result;
 
 @RestController
 public class LoginController {

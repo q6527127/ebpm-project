@@ -175,6 +175,7 @@
 		     <version>3.8.1</version>
 		     <scope>test</scope>
 		</dependency>
+		
 <dependency>
 	<groupId>joda-time</groupId>
 	<artifactId>joda-time</artifactId>
@@ -188,5 +189,6 @@
     <module>ebpm-ribbon-consumer</module>
     <module>ebpm-hello-service</module>
     <module>ebpm-common-service</module>
+    <module>ebpm-process-service</module>
   </modules>
   </project>

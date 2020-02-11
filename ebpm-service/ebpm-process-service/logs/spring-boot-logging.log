@@ -1,0 +1,592 @@
+2020/02/11-14:59 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4: startup date [Tue Feb 11 14:59:55 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=93010703-d058-3d97-8818-736cf27efa09
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6889ea92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$d354e6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84a3ed8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-14:59 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8083 (http)
+ 2020/02/11-14:59 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-14:59 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 4731 ms
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:00 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:00 [restartedMain] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'feignConotroller': Unsatisfied dependency expressed through field 'testService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebpm.common.commonFeign.TestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+ 2020/02/11-15:00 [restartedMain] INFO  org.apache.catalina.core.StandardService- Stopping service [Tomcat]
+ 2020/02/11-15:00 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+ 2020/02/11-15:00 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field testService in com.ebpm.controller.FeignConotroller required a bean of type 'com.ebpm.common.commonFeign.TestService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ebpm.common.commonFeign.TestService' in your configuration.
+
+ 2020/02/11-15:01 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53b4b56a: startup date [Tue Feb 11 15:01:18 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=93010703-d058-3d97-8818-736cf27efa09
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad3dbaf8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$51e91ed5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c957bdf5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8083 (http)
+ 2020/02/11-15:01 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-15:01 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2574 ms
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:01 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:01 [restartedMain] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'feignConotroller': Unsatisfied dependency expressed through field 'testService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ebpm.common.commonFeign.TestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+ 2020/02/11-15:01 [restartedMain] INFO  org.apache.catalina.core.StandardService- Stopping service [Tomcat]
+ 2020/02/11-15:01 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+ 2020/02/11-15:01 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field testService in com.ebpm.controller.FeignConotroller required a bean of type 'com.ebpm.common.commonFeign.TestService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.ebpm.common.commonFeign.TestService' in your configuration.
+
+ 2020/02/11-15:02 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402: startup date [Tue Feb 11 15:02:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f067676
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=3a35f08a-3756-3d6c-b2ce-c1b0f706bd05
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ea0820ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$8eb384c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:02 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$62223e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8083 (http)
+ 2020/02/11-15:03 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-15:03 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2702 ms
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@61ebeb23: startup date [Tue Feb 11 15:03:01 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:03 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:03 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402: startup date [Tue Feb 11 15:02:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f067676
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/setSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.setSession()
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/loadAllDb0Page],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.loadAllDb0Page()
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getDataToDb],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getDataToDb(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.ui.freemarker.SpringTemplateLoader- SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402: startup date [Tue Feb 11 15:02:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f067676] and template loader path [classpath:/templates/]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+ 2020/02/11-15:03 [restartedMain] WARN  org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration- Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- LiveReload server is running on port 35729
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db0' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db1' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'environmentManager' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'refreshScope' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db1': registering with JMX server as MBean [com.alibaba.druid.pool:name=db1,type=DruidDataSource]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db0': registering with JMX server as MBean [com.alibaba.druid.pool:name=db0,type=DruidDataSource]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=64cd5402,type=ConfigurationPropertiesRebinder]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 0
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory- Setting initial instance status as: STARTING
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Initializing Eureka in region us-east-1
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON encoding codec LegacyJacksonJson
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON decoding codec LegacyJacksonJson
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML encoding codec XStreamXml
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML decoding codec XStreamXml
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver- Resolving eureka endpoints via configuration
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Disable delta property : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Single vip registry refresh property : null
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Force full registry fetch : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application is null : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Registered Applications size is zero : true
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application version is -1: true
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Getting all instance registry info from the eureka server
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- The response status is 200
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Starting heartbeat executor: renew interval is: 30
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator- InstanceInfoReplicator onDemand update allowed rate per min is 4
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Discovery Client initialized at timestamp 1581404585190 with initial instances count: 0
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Registering application spring-clould-process-service-v1 with eureka with status UP
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404585229, current=UP, previous=STARTING]
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083: registering service...
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 2147483647
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083 - registration status: 204
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8083 (http)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration- Updating port to 8083
+ 2020/02/11-15:03 [restartedMain] INFO  com.ebpm.ServiceApp- Started ServiceApp in 10.49 seconds (JVM running for 11.004)
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402: startup date [Tue Feb 11 15:02:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1f067676
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Unregistering application spring-clould-process-service-v1 with eureka with status DOWN
+ 2020/02/11-15:03 [Thread-14] WARN  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404588492, current=DOWN, previous=UP]
+ 2020/02/11-15:03 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient- Shutting down DiscoveryClient ...
+ 2020/02/11-15:03 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient- Unregistering ...
+ 2020/02/11-15:03 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083 - deregister  status: 200
+ 2020/02/11-15:03 [Thread-14] INFO  com.netflix.discovery.DiscoveryClient- Completed shut down of DiscoveryClient
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 2147483647
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 0
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+ 2020/02/11-15:03 [Thread-14] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@61ebeb23: startup date [Tue Feb 11 15:03:01 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64cd5402
+ 2020/02/11-15:03 [Thread-14] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext- Exception thrown from ApplicationListener handling ContextClosedEvent
+ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'sqlSessionFactoryBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:236) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:193) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:992) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+2020/02/11-15:03 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd: startup date [Tue Feb 11 15:03:38 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@313a2294
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=3a35f08a-3756-3d6c-b2ce-c1b0f706bd05
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$54b35a4c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$f95ebe29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$70cd5d49] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8083 (http)
+ 2020/02/11-15:03 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-15:03 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 3165 ms
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:03 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e780c45: startup date [Tue Feb 11 15:03:42 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:03 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:03 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd: startup date [Tue Feb 11 15:03:38 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@313a2294
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getDataToDb],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getDataToDb(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/setSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.setSession()
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/loadAllDb0Page],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.loadAllDb0Page()
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.ui.freemarker.SpringTemplateLoader- SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd: startup date [Tue Feb 11 15:03:38 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@313a2294] and template loader path [classpath:/templates/]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+ 2020/02/11-15:03 [restartedMain] WARN  org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration- Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+ 2020/02/11-15:03 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- Unable to start LiveReload server
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db0' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db1' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'environmentManager' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'refreshScope' has been autodetected for JMX exposure
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db1': registering with JMX server as MBean [com.alibaba.druid.pool:name=db1,type=DruidDataSource]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db0': registering with JMX server as MBean [com.alibaba.druid.pool:name=db0,type=DruidDataSource]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=e28a9bd,type=ConfigurationPropertiesRebinder]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 0
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory- Setting initial instance status as: STARTING
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Initializing Eureka in region us-east-1
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON encoding codec LegacyJacksonJson
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON decoding codec LegacyJacksonJson
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML encoding codec XStreamXml
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML decoding codec XStreamXml
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver- Resolving eureka endpoints via configuration
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Disable delta property : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Single vip registry refresh property : null
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Force full registry fetch : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application is null : false
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Registered Applications size is zero : true
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application version is -1: true
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Getting all instance registry info from the eureka server
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- The response status is 200
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Starting heartbeat executor: renew interval is: 30
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator- InstanceInfoReplicator onDemand update allowed rate per min is 4
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Discovery Client initialized at timestamp 1581404625936 with initial instances count: 1
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Registering application spring-clould-process-service-v1 with eureka with status UP
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404625989, current=UP, previous=STARTING]
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083: registering service...
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 2147483647
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083 - registration status: 204
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2020/02/11-15:03 [restartedMain] ERROR org.apache.catalina.core.StandardService- Failed to start connector [Connector[HTTP/1.1-8083]]
+ org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8083]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:256) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:203) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:289) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:123) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:666) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:353) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:300) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at com.ebpm.ServiceApp.main(ServiceApp.java:18) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_171]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_171]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_171]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_171]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1191) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.43.jar:8.5.43]
+	... 19 common frames omitted
+2020/02/11-15:03 [restartedMain] INFO  org.apache.catalina.core.StandardService- Stopping service [Tomcat]
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+ 2020/02/11-15:03 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8083 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8083, or configure this application to listen on another port.
+
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd: startup date [Tue Feb 11 15:03:38 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@313a2294
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Unregistering application spring-clould-process-service-v1 with eureka with status DOWN
+ 2020/02/11-15:03 [restartedMain] WARN  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404626154, current=DOWN, previous=UP]
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083: registering service...
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Shutting down DiscoveryClient ...
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Unregistering ...
+ 2020/02/11-15:03 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083 - registration status: 204
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8083 - deregister  status: 200
+ 2020/02/11-15:03 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Completed shut down of DiscoveryClient
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 2147483647
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 0
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+ 2020/02/11-15:03 [restartedMain] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5e780c45: startup date [Tue Feb 11 15:03:42 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e28a9bd
+ 2020/02/11-15:03 [restartedMain] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext- Exception thrown from ApplicationListener handling ContextClosedEvent
+ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'sqlSessionFactoryBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:236) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:193) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:992) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:721) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at com.ebpm.ServiceApp.main(ServiceApp.java:18) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+2020/02/11-15:04 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@67ec8b1f: startup date [Tue Feb 11 15:04:18 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4e512157
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=3a35f08a-3756-3d6c-b2ce-c1b0f706bd05
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c135cfab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$65e13388] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dd4fd2a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8084 (http)
+ 2020/02/11-15:04 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-15:04 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2973 ms
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d8b74cf: startup date [Tue Feb 11 15:04:21 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@67ec8b1f
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:04 [restartedMain] INFO  com.ebpm.ServiceApp- No active profile set, falling back to default profiles: default
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4: startup date [Tue Feb 11 15:04:31 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate- Multiple Spring Data modules found, entering strict repository configuration mode!
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.cloud.context.scope.GenericScope- BeanFactory id=3a35f08a-3756-3d6c-b2ce-c1b0f706bd05
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6889ea92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'redisConfig' of type [com.ebpm.config.RedisConfig$$EnhancerBySpringCGLIB$$d354e6f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker- Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$84a3ed8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat initialized with port(s): 8084 (http)
+ 2020/02/11-15:04 [restartedMain] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+ 2020/02/11-15:04 [restartedMain] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet Engine: Apache Tomcat/8.5.43
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring embedded WebApplicationContext
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 2674 ms
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'dispatcherServlet' to [/]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean- Mapping servlet: 'statViewServlet' to [/druid/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'characterEncodingFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'requestContextFilter' to: [/*]
+ 2020/02/11-15:04 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean- Mapping filter: 'webStatFilter' to urls: [/*]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26ba10eb: startup date [Tue Feb 11 15:04:35 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:04 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:04 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource- No URLs will be polled as dynamic configuration sources.
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.config.sources.URLConfigurationSource- To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4: startup date [Tue Feb 11 15:04:31 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/setSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.setSession()
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/loadAllDb0Page],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.loadAllDb0Page()
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getDataToDb],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getDataToDb(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/feign/getSession],methods=[GET]}" onto public java.lang.String com.ebpm.controller.FeignConotroller.getSession(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.ui.freemarker.SpringTemplateLoader- SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4: startup date [Tue Feb 11 15:04:31 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d] and template loader path [classpath:/templates/]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer- ClassTemplateLoader for Spring macros added to FreeMarker configuration
+ 2020/02/11-15:04 [restartedMain] WARN  org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration- Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+ 2020/02/11-15:04 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer- Unable to start LiveReload server
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Registering beans for JMX exposure on startup
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db0' has been autodetected for JMX exposure
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'db1' has been autodetected for JMX exposure
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'environmentManager' has been autodetected for JMX exposure
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Bean with name 'refreshScope' has been autodetected for JMX exposure
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db1': registering with JMX server as MBean [com.alibaba.druid.pool:name=db1,type=DruidDataSource]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located MBean 'db0': registering with JMX server as MBean [com.alibaba.druid.pool:name=db0,type=DruidDataSource]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=6f0401c4,type=ConfigurationPropertiesRebinder]
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 0
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory- Setting initial instance status as: STARTING
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Initializing Eureka in region us-east-1
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON encoding codec LegacyJacksonJson
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using JSON decoding codec LegacyJacksonJson
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML encoding codec XStreamXml
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider- Using XML decoding codec XStreamXml
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver- Resolving eureka endpoints via configuration
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Disable delta property : false
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Single vip registry refresh property : null
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Force full registry fetch : false
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application is null : false
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Registered Applications size is zero : true
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Application version is -1: true
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Getting all instance registry info from the eureka server
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- The response status is 200
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Starting heartbeat executor: renew interval is: 30
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.InstanceInfoReplicator- InstanceInfoReplicator onDemand update allowed rate per min is 4
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Discovery Client initialized at timestamp 1581404679482 with initial instances count: 1
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Registering application spring-clould-process-service-v1 with eureka with status UP
+ 2020/02/11-15:04 [restartedMain] INFO  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404679528, current=UP, previous=STARTING]
+ 2020/02/11-15:04 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8084: registering service...
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Starting beans in phase 2147483647
+ 2020/02/11-15:04 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8084 - registration status: 204
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor- No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer- Tomcat started on port(s): 8084 (http)
+ 2020/02/11-15:04 [restartedMain] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration- Updating port to 8084
+ 2020/02/11-15:04 [restartedMain] INFO  com.ebpm.ServiceApp- Started ServiceApp in 9.429 seconds (JVM running for 10.028)
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/ebpm]- Initializing Spring FrameworkServlet 'dispatcherServlet'
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization started
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet- FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@54bb6c86: startup date [Tue Feb 11 15:05:33 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.config.ChainedDynamicProperty- Flipping property: spring-clould-test-service-v1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer- Shutdown hook installed for: NFLoadBalancer-PingTimer-spring-clould-test-service-v1
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer- Client: spring-clould-test-service-v1 instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=spring-clould-test-service-v1,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer- Using serverListUpdater PollingServerListUpdater
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.config.ChainedDynamicProperty- Flipping property: spring-clould-test-service-v1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+ 2020/02/11-15:05 [http-nio-8084-exec-1] INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer- DynamicServerListLoadBalancer for client spring-clould-test-service-v1 initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=spring-clould-test-service-v1,current list of Servers=[192.168.31.16:8083],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.31.16:8083;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@16885f31
+ 2020/02/11-15:05 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty- Flipping property: spring-clould-test-service-v1.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4: startup date [Tue Feb 11 15:04:31 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c7db22d
+ 2020/02/11-15:06 [Thread-15] INFO  com.netflix.loadbalancer.PollingServerListUpdater- Shutting down the Executor Pool for PollingServerListUpdater
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry- Unregistering application spring-clould-process-service-v1 with eureka with status DOWN
+ 2020/02/11-15:06 [Thread-12] WARN  com.netflix.discovery.DiscoveryClient- Saw local status change event StatusChangeEvent [timestamp=1581404764847, current=DOWN, previous=UP]
+ 2020/02/11-15:06 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8084: registering service...
+ 2020/02/11-15:06 [Thread-12] INFO  com.netflix.discovery.DiscoveryClient- Shutting down DiscoveryClient ...
+ 2020/02/11-15:06 [Thread-12] INFO  com.netflix.discovery.DiscoveryClient- Unregistering ...
+ 2020/02/11-15:06 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8084 - registration status: 204
+ 2020/02/11-15:06 [Thread-12] INFO  com.netflix.discovery.DiscoveryClient- DiscoveryClient_SPRING-CLOULD-PROCESS-SERVICE-V1/192.168.31.16:spring-clould-process-service-v1:8084 - deregister  status: 200
+ 2020/02/11-15:06 [Thread-12] INFO  com.netflix.discovery.DiscoveryClient- Completed shut down of DiscoveryClient
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 2147483647
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.context.support.DefaultLifecycleProcessor- Stopping beans in phase 0
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans on shutdown
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter- Unregistering JMX-exposed beans
+ 2020/02/11-15:06 [Thread-12] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@54bb6c86: startup date [Tue Feb 11 15:05:33 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4
+ 2020/02/11-15:06 [Thread-12] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext- Exception thrown from ApplicationListener handling ContextClosedEvent
+ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaAutoServiceRegistration': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1082) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:285) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:255) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:177) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:140) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:992) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+2020/02/11-15:06 [Thread-12] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer- Shutdown hook removed for: NFLoadBalancer-PingTimer-spring-clould-test-service-v1
+ 2020/02/11-15:06 [Thread-12] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer- Exception caught (might be ok if at shutdown)
+ java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82) ~[na:1.8.0_171]
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239) ~[na:1.8.0_171]
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70) ~[netflix-commons-util-0.1.1.jar:na]
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:613) [ribbon-loadbalancer-2.2.2.jar:2.2.2]
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:864) [ribbon-loadbalancer-2.2.2.jar:2.2.2]
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:277) [ribbon-loadbalancer-2.2.2.jar:2.2.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:364) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:287) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+2020/02/11-15:06 [Thread-12] INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext- Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@26ba10eb: startup date [Tue Feb 11 15:04:35 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f0401c4
+ 2020/02/11-15:06 [Thread-12] WARN  org.springframework.context.annotation.AnnotationConfigApplicationContext- Exception thrown from ApplicationListener handling ContextClosedEvent
+ org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'sqlSessionFactoryBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:216) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:236) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:193) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:128) ~[spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:399) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:992) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:958) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76) [spring-cloud-context-1.2.5.RELEASE.jar:1.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:272) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:583) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:555) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:516) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961) [spring-beans-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1034) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1009) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext$2.run(AbstractApplicationContext.java:929) [spring-context-4.3.25.RELEASE.jar:4.3.25.RELEASE]

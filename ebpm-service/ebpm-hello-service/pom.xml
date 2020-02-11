@@ -16,10 +16,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
-  	<dependency>
-			<groupId>ebpm.com</groupId>
-	  		<artifactId>ebpm-common-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+ 	<!-- 本地包 -->
+	<dependency>
+		<groupId>ebpm.com</groupId>
+  		<artifactId>ebpm-common-service</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<scope>provided</scope>
 	</dependency>
     <dependency>
       <groupId>junit</groupId>

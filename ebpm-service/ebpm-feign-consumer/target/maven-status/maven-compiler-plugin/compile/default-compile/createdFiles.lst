@@ -1,8 +1,0 @@
-com/ebpm/config/FeignHystrixConcurrencyStrategy.class
-com/ebpm/config/FeignClientsConfigurationCustom.class
-com/ebpm/test/SessionSharedTestController.class
-com/ebpm/config/RedisSessionConfig.class
-com/ebpm/config/FeignHystrixConcurrencyStrategy$WrappedCallable.class
-com/ebpm/test/TestService.class
-com/ebpm/FeignApp.class
-com/ebpm/test/TestConotroller.class

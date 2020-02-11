@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ebpm.bean.GetDataOVO;
-import com.ebpm.bean.Result;
+import com.ebpm.common.bean.GetDataOVO;
+import com.ebpm.common.bean.Result;
 
 @RestController
 public class DataController {

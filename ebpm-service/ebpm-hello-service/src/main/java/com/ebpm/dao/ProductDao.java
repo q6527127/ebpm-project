@@ -12,8 +12,8 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import com.ebpm.pojo.Product;
-import com.ebpm.pojo.User3;
+import com.ebpm.common.pojo.Product;
+import com.ebpm.common.pojo.User3;
 
 
 /**

@@ -19,12 +19,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.alibaba.fastjson.JSON;
-import com.ebpm.base.baseController;
-import com.ebpm.pojo.Product;
-import com.ebpm.pojo.User3;
+import com.ebpm.common.base.baseController;
+import com.ebpm.common.pojo.Product;
+import com.ebpm.common.pojo.User3;
 import com.ebpm.service.ProductService;
-import com.ebpm.util.RandomUtil;
-import com.ebpm.util.RedisUtil;
+import com.ebpm.common.util.RandomUtil;
+import com.ebpm.common.util.RedisUtil;
 
 /**
  * 数据库测试controller

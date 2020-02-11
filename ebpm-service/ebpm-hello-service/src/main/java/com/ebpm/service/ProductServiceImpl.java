@@ -16,8 +16,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.ebpm.dao.Product2Dao;
 import com.ebpm.dao.ProductDao;
-import com.ebpm.pojo.Product;
-import com.ebpm.pojo.User3;
+import com.ebpm.common.pojo.Product;
+import com.ebpm.common.pojo.User3;
 
 /**
  * 产品业务层实现类
